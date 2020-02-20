@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head><title>FORM</title></head>
+<!-- <link href="form.css" rel="stylesheet"> -->
+<style>
+form{
+border: 3px solid black;
+padding : 5px 5px;
+<!--background-color : #99ffcc;-->
+margin : 1px;
+display: inline-block;
+}
+input,textarea,select{
+padding : 1px;
+}
+body{
+text-align:center;
+}
+button[type=submit]{
+background-color: #4CAF50;
+padding: 5px 5px;
+font-size: 14px;
+border: 2px solid black;
+}
+button[type=reset]{
+background-color: red;
+padding: 5px 5px;
+font-size: 14px;
+border: 2px solid black;
+}
+h5{
+color: purple;
+}
+</style>
+<body>
+<form>
+<h1>FORM</h1>
+Enter username : <input type="text" name="tt" required><br><br>
+Enter password : <input type="password" name="p" required><br><br>
+Enter Name : <input type="text" name="t" required><br><br>
+Enter Age : <input type=number name="t1"><br><br>
+Enter DOB : <input type="date" name"d1" required><br><br>
+Enter Gender : <input type=radio name="r1">Female
+<input type="radio" name="r2">Male<br><br>
+Enter MailId : 
+<input type=email><br><br>
+Course :
+<input type="checkbox" name="c1">Java
+<input type="checkbox" name="c2">HTML
+<input type="checkbox" name="c3">CSS<br><br>
+City :
+<select>
+ <option value="Hyderabad">Hyderabad</option>
+ <option value="goa">Goa</option>
+</select><br><br>
+Remark :
+<textarea row=3 col=5></textarea><br><br>
+Upload :
+<input type="file"><br><br>
+<button type="submit">Submit</button>
+<button type="reset">Cancel</button>
+<h5><marquee>Form is for survey purpose</marquee></h5>
+<h3 align="left" style="color:#ff0066">Instructions : </h3>
+<ol align="left" type="I">
+ <li>The username must have:</li>
+   <ul type="square">
+     <li>One caps</li>
+     <li>Minimum of 4 characters</li>
+   </ul>
+ <li>The password must be:</li>
+   <ul>
+     <li>Of atleast 5 characters</li>
+     <li>Must not be empty</li>
+   </ul>
+</ol>
+<p>If need any furthur information click the link below <a href="https://www.google.com">Info</a></p>
+</form>
+</body>
+</html>
